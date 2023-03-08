@@ -1,0 +1,6 @@
+framework module PMTPodTest {
+  umbrella header "PMTPodTest.h"
+
+  export *
+  module * { export * }
+}
