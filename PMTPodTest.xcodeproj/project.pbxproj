@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		797A4FCB29B8358100882369 /* PMTPodTest.docc in Sources */ = {isa = PBXBuildFile; fileRef = 797A4FCA29B8358100882369 /* PMTPodTest.docc */; };
 		797A4FCC29B8358100882369 /* PMTPodTest.h in Headers */ = {isa = PBXBuildFile; fileRef = 797A4FC929B8358100882369 /* PMTPodTest.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		797A4FD429B8361700882369 /* Hello.h in Headers */ = {isa = PBXBuildFile; fileRef = 797A4FD229B8361700882369 /* Hello.h */; };
+		797A4FD429B8361700882369 /* Hello.h in Headers */ = {isa = PBXBuildFile; fileRef = 797A4FD229B8361700882369 /* Hello.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		797A4FD529B8361700882369 /* Hello.m in Sources */ = {isa = PBXBuildFile; fileRef = 797A4FD329B8361700882369 /* Hello.m */; };
 /* End PBXBuildFile section */
 
