@@ -4,6 +4,10 @@
 <dict>
 	<key>files</key>
 	<dict>
+		<key>Headers/Hello.h</key>
+		<data>
+		mFqoME9ys69Wpuv/yRsduNIgXoM=
+		</data>
 		<key>Headers/PMTPodTest.h</key>
 		<data>
 		903ZiW8LbXhDZFOlsmq1+I+0PSQ=
@@ -19,6 +23,13 @@
 	</dict>
 	<key>files2</key>
 	<dict>
+		<key>Headers/Hello.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			dfsnbOzEj/Fig5xfWZs8Wqez2gSI2yFTQJie+w5KZTs=
+			</data>
+		</dict>
 		<key>Headers/PMTPodTest.h</key>
 		<dict>
 			<key>hash2</key>
