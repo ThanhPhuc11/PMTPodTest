@@ -1,8 +1,8 @@
 Pod::Spec.new do |spec|
   spec.name          = 'PMTPodTest'
-  spec.version       = '1.0.3'
+  spec.version       = '1.0.4'
   spec.description  = <<-DESC
-			This is pod test
+			This is pod test add encrypt
                    DESC
   spec.license      = { :type => "MIT", :file => "LICENSE" }
   spec.homepage      = 'https://github.com/ThanhPhuc11/PMTPodTest'

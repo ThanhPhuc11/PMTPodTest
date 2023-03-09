@@ -11,6 +11,14 @@
 		797A4FCC29B8358100882369 /* PMTPodTest.h in Headers */ = {isa = PBXBuildFile; fileRef = 797A4FC929B8358100882369 /* PMTPodTest.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		797A4FD429B8361700882369 /* Hello.h in Headers */ = {isa = PBXBuildFile; fileRef = 797A4FD229B8361700882369 /* Hello.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		797A4FD529B8361700882369 /* Hello.m in Sources */ = {isa = PBXBuildFile; fileRef = 797A4FD329B8361700882369 /* Hello.m */; };
+		798CDFDC29B9B47200A0659C /* RSAClass.h in Headers */ = {isa = PBXBuildFile; fileRef = 798CDFDA29B9B47200A0659C /* RSAClass.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		798CDFDD29B9B47200A0659C /* RSAClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 798CDFDB29B9B47200A0659C /* RSAClass.m */; };
+		798CE00729B9DD4900A0659C /* Crypt in Resources */ = {isa = PBXBuildFile; fileRef = 798CE00529B9CA9800A0659C /* Crypt */; };
+		798CE00A29B9DE8200A0659C /* librsaXcode.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 798CE00929B9DE8200A0659C /* librsaXcode.a */; };
+		798CE00E29B9DF0200A0659C /* RSACrypt.m in Sources */ = {isa = PBXBuildFile; fileRef = 798CE00C29B9DF0200A0659C /* RSACrypt.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		798CE00F29B9DF0200A0659C /* RSAUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 798CE00D29B9DF0200A0659C /* RSAUtils.m */; };
+		798CE01029B9E15600A0659C /* Crypt in Sources */ = {isa = PBXBuildFile; fileRef = 798CE00529B9CA9800A0659C /* Crypt */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		798CE01229B9E17D00A0659C /* Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 798CE01129B9E17D00A0659C /* Base64.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +27,13 @@
 		797A4FCA29B8358100882369 /* PMTPodTest.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = PMTPodTest.docc; sourceTree = "<group>"; };
 		797A4FD229B8361700882369 /* Hello.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Hello.h; sourceTree = "<group>"; };
 		797A4FD329B8361700882369 /* Hello.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Hello.m; sourceTree = "<group>"; };
+		798CDFDA29B9B47200A0659C /* RSAClass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RSAClass.h; sourceTree = "<group>"; };
+		798CDFDB29B9B47200A0659C /* RSAClass.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RSAClass.m; sourceTree = "<group>"; };
+		798CE00529B9CA9800A0659C /* Crypt */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Crypt; sourceTree = "<group>"; };
+		798CE00929B9DE8200A0659C /* librsaXcode.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = librsaXcode.a; path = PMTPodTest/Crypt/librsaXcode.a; sourceTree = "<group>"; };
+		798CE00C29B9DF0200A0659C /* RSACrypt.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = RSACrypt.m; path = PMTPodTest/Crypt/RSACrypt.m; sourceTree = "<group>"; };
+		798CE00D29B9DF0200A0659C /* RSAUtils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = RSAUtils.m; path = PMTPodTest/Crypt/RSAUtils.m; sourceTree = "<group>"; };
+		798CE01129B9E17D00A0659C /* Base64.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = Base64.m; path = PMTPodTest/Crypt/Base64.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +41,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				798CE00A29B9DE8200A0659C /* librsaXcode.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -35,8 +51,12 @@
 		797A4FBC29B8358100882369 = {
 			isa = PBXGroup;
 			children = (
+				798CE01129B9E17D00A0659C /* Base64.m */,
+				798CE00C29B9DF0200A0659C /* RSACrypt.m */,
+				798CE00D29B9DF0200A0659C /* RSAUtils.m */,
 				797A4FC829B8358100882369 /* PMTPodTest */,
 				797A4FC729B8358100882369 /* Products */,
+				798CE00829B9DE8200A0659C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -51,12 +71,23 @@
 		797A4FC829B8358100882369 /* PMTPodTest */ = {
 			isa = PBXGroup;
 			children = (
+				798CE00529B9CA9800A0659C /* Crypt */,
 				797A4FC929B8358100882369 /* PMTPodTest.h */,
 				797A4FCA29B8358100882369 /* PMTPodTest.docc */,
 				797A4FD229B8361700882369 /* Hello.h */,
 				797A4FD329B8361700882369 /* Hello.m */,
+				798CDFDA29B9B47200A0659C /* RSAClass.h */,
+				798CDFDB29B9B47200A0659C /* RSAClass.m */,
 			);
 			path = PMTPodTest;
+			sourceTree = "<group>";
+		};
+		798CE00829B9DE8200A0659C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				798CE00929B9DE8200A0659C /* librsaXcode.a */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -68,6 +99,7 @@
 			files = (
 				797A4FCC29B8358100882369 /* PMTPodTest.h in Headers */,
 				797A4FD429B8361700882369 /* Hello.h in Headers */,
+				798CDFDC29B9B47200A0659C /* RSAClass.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -129,6 +161,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				798CE00729B9DD4900A0659C /* Crypt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -139,6 +172,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				798CE01229B9E17D00A0659C /* Base64.m in Sources */,
+				798CE01029B9E15600A0659C /* Crypt in Sources */,
+				798CE00E29B9DF0200A0659C /* RSACrypt.m in Sources */,
+				798CE00F29B9DF0200A0659C /* RSAUtils.m in Sources */,
+				798CDFDD29B9B47200A0659C /* RSAClass.m in Sources */,
 				797A4FD529B8361700882369 /* Hello.m in Sources */,
 				797A4FCB29B8358100882369 /* PMTPodTest.docc in Sources */,
 			);
@@ -276,10 +314,15 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/PMTPodTest/Crypt",
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.phucmt.PMTPodTest;
@@ -303,10 +346,15 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/PMTPodTest/Crypt",
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.phucmt.PMTPodTest;
