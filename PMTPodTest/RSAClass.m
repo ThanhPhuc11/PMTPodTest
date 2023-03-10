@@ -6,7 +6,9 @@
 //
 
 #import "RSAClass.h"
-#import "Crypt/RSACrypt.h"
+//#import "Crypt/RSACrypt.h"
+#import "RSACrypt.h"
+#import "E2EECrypt.h"
 
 @implementation RSAClass
 
@@ -28,13 +30,13 @@
     NSString *sbResult = @"";
     int i;
     int idata;
-    Byte* byteData = (Byte)malloc([data length]);
+    Byte *byteData = (Byte*)malloc([data length]);
     memcpy(byteData, [data bytes], [data length]);
     for (i=0; i<[data length]; i++) {
         if (appendPerc) {
             sbResult = [NSString stringWithFormat:@"%@%@", sbResult, @"%"];
         }
-        idata = (int) *(byteData+i);
+        idata = (int) byteData[i];
         if ((idata & 0xff) < 0x10) {
             sbResult = [NSString stringWithFormat:@"%@%i", sbResult, 0];
         }
@@ -44,6 +46,10 @@
     free(byteData);
     
     return sbResult;
+}
+
++ (nullable NSString *)encryptedPassword:(NSString *)password publicKey:(NSString *)publicKey randomNum:(NSString *)randomNum sessionID:(NSString *)sessionID {
+    return [E2EECrypt e2eePassword:publicKey randomKey:randomNum session:sessionID password:password];
 }
 
 @end

@@ -13,6 +13,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (NSString *)rsaEncryptData:(NSString *)plainText withModulus:(NSString *)modulus andExponent:(NSString *)exponent andTag:(NSString *)tag;
 
++ (nullable NSString *)encryptedPassword:(NSString *)password publicKey:(NSString *)publicKey randomNum:(NSString *)randomNum sessionID:(NSString *)sessionID;
+
 @end
 
 NS_ASSUME_NONNULL_END
